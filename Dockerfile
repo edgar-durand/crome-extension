@@ -4,7 +4,7 @@ WORKDIR /usr/home
 COPY . .
 
 RUN npm i
-RUN /usr/home/node_modules/@angular/cli/bin/ng build --configuration production
+RUN /usr/home/node_modules/@angular/cli/bin/ng build
 
 
 
