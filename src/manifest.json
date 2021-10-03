@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Angular Extension",
+  "author": "Team",
+  "description": "Desc.",
+  "short_name": "angularExtension",
+  "icons": {
+    "72": "assets/icons/icon-72x72.png",
+    "96": "assets/icons/icon-96x96.png",
+    "128": "assets/icons/icon-128x128.png",
+    "144": "assets/icons/icon-144x144.png",
+    "152": "assets/icons/icon-152x152.png",
+    "192": "assets/icons/icon-192x192.png",
+    "384": "assets/icons/icon-384x384.png",
+    "512": "assets/icons/icon-512x512.png"
+  },
+  "browser_action": {
+    "default_title": "Angular Extension",
+    "default_icon": "assets/icons/icon-72x72.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "page": "index.html"
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "cookies"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}
+
