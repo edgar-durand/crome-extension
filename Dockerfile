@@ -9,7 +9,6 @@ RUN /usr/home/node_modules/@angular/cli/bin/ng build
 
 
 FROM joinnus/nginx-node
-ARG env
 ENV NODE_ENV production
 
 # Stream the nginx logs to stdout and stderr
